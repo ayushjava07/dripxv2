@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import {nodePolyfills} from 'vite-plugin-node-polyfills'
+import nodePolyfills from 'rollup-plugin-node-polyfills'
 
 export default defineConfig({
-  base:'/DripX/',
+  base: '/DripX/', // 👈 Very important — repo name with forward slashes
   plugins: [
     react(),
     nodePolyfills({
@@ -14,7 +14,7 @@ export default defineConfig({
     alias: {
       crypto: 'crypto-browserify',
       stream: 'stream-browserify',
-      process: 'process/browser',
+      // process: 'process/browser',
     },
   },
   define: {
