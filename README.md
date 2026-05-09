@@ -1,12 +1,74 @@
-# React + Vite
+# DripX: The Solana Airdrop Engine 💧🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DripX is a modern, high-performance Solana faucet application built with React and Vite. It allows users to easily claim Devnet SOL to their wallets with a sleek, interactive interface.
 
-Currently, two official plugins are available:
+![DripX Banner](https://raw.githubusercontent.com/solana-labs/art/master/common/logo-horizontal.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Instant Wallet Integration:** Support for various Solana wallets (Phantom, Solflare, etc.).
+- **Real-time Balance Tracking:** Automatically fetches and updates your SOL balance.
+- **Easy Airdrop Requests:** Request Devnet SOL with a single click (up to 2 SOL per request).
+- **Safety Measures:** Built-in rate limiting and amount validation.
+- **Responsive UI:** Styled with a futuristic, dark-mode aesthetic using Tailwind CSS and custom fonts.
+- **Transaction Feedback:** Real-time notifications for transaction status using React Toastify.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend:** React 18, Vite
+- **Styling:** Tailwind CSS, Custom CSS Gradients
+- **Solana Integration:** @solana/web3.js, @solana/wallet-adapter-react
+- **Notifications:** React Toastify
+- **Deployment:** Vercel
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/dripxv2.git
+   cd dripxv2
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## 🌐 Deployment
+
+This project is optimized for deployment on **Vercel**.
+
+1. Push your code to a GitHub repository.
+2. Connect your repository to Vercel.
+3. Vercel will automatically detect the Vite configuration and deploy your app.
+
+## 💡 Usage Tips
+
+- Make sure your wallet is set to **Devnet** before connecting.
+- Devnet SOL has no real-world value and is for testing purposes only.
+- If an airdrop fails, wait for 10-20 seconds as the Devnet faucet might be rate-limited.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+Built with ⚡ by [Your Name]

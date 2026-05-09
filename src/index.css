@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: LG;
+  src: url(./Fonts/LegianTypeface.otf);
+}
+@font-face {
+  font-family: NM1;
+  src: url(./Fonts/NeueMachina-Light.otf);
+}
+@font-face {
+  font-family: NM2;
+  src: url(./Fonts/NeueMachina-Regular.otf);
+}
+@font-face {
+  font-family: NM3;
+  src: url(./Fonts/NeueMachina-Ultrabold.otf);
+}
+
+@theme {
+  --font-lg: "LG", sans-serif;
+  --font-nm1: "NM1", sans-serif;
+  --font-nm2: "NM2", sans-serif;
+  --font-nm3: "NM3", sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: black;
+    color: white;
+  }
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-flow {
+  background-size: 200% auto;
+  animation: gradient-flow 5s linear infinite;
+}
+
+/* Custom styles for Solana Wallet Button to match our UI */
+.wallet-adapter-button {
+  font-family: 'NM3' !important;
+  font-size: 14px !important;
+  height: 48px !important;
+  line-height: 48px !important;
+  padding: 0 24px !important;
+  border-radius: 12px !important;
+}
+
+.wallet-adapter-button-trigger {
+  background-color: #7c3aed !important;
+}
+
+.wallet-adapter-button:not([disabled]):hover {
+  background-color: #6d28d9 !important;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
