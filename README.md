@@ -2,7 +2,7 @@
 
 DripX is a modern, high-performance Solana faucet application built with React and Vite. It allows users to easily claim Devnet SOL to their wallets with a sleek, interactive interface.
 
-![DripX Banner](https://raw.githubusercontent.com/solana-labs/art/master/common/logo-horizontal.svg)
+<img width="267" height="140" alt="image" src="https://github.com/user-attachments/assets/896961c4-7542-4250-addf-a58fad9b18f4" />
 
 ## ✨ Features
 
